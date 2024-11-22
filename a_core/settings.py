@@ -41,9 +41,9 @@ if ENVIRONMENT == 'development':
 else:
     DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '*']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'dockerdeploy.up.railway.app']
 
-CSRF_TRUSTED_ORIGINS = [ 'https://*' ]
+CSRF_TRUSTED_ORIGINS = [ 'https://dockerdeploy.up.railway.app' ]
 
 INTERNAL_IPS = (
     '127.0.0.1',
