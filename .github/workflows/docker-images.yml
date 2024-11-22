@@ -10,6 +10,6 @@ jobs:
       - uses: actions/checkout@v4
       - name: Build and push Docker Image
         run: |
-          docker login ghcr.io --username malripo --password $ {{ secrets.MY_PAT }}
+          docker login ghcr.io --username malripo --password ${{ secrets.MY_PAT }}
           docker build . -t ghcr.io/malripo/my-app-image
           docker push ghcr.io/malripo/my-app-image
